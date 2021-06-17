@@ -11,7 +11,7 @@ The scope of this research is to determine if there is any correlation between t
 
 ## Poster
 <img width="1090" alt="Screen Shot 2021-06-16 at 11 07 53 PM" src="https://user-images.githubusercontent.com/55771175/122329866-c0186400-cef7-11eb-9236-f6e659081e86.png">
-To get the PDF version, [click here](https://conservancy.umn.edu/handle/11299/213539)
+To get the PDF version, [a](https://conservancy.umn.edu/handle/11299/213539)
 
 ## Programming languages, tools, and frameworks
  - Python

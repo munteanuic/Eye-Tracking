@@ -1,4 +1,4 @@
-# Assesing Visual Attenion Using Eye Tracking (Independent Research Project)
+# Assessing Visual Attention Using Eye Tracking (Independent Research Project)
 
 ## Author:
 Ioana Munteanu
@@ -26,6 +26,8 @@ To get the PDF version, [click here.](https://conservancy.umn.edu/handle/11299/2
 - percentage_focus.py: algorithm sed to determine the percentage of focus, as described in "Velocity as a measure of focus"
 - plot.py: helper functions used to graph the data
 - results_table.csv: table containing data about residency year,	average velocity during the scrub-in and during the actual surgery, and	the difference between the two velocities
+
+
 
 
 

@@ -73,8 +73,8 @@ def percentFocused(time, table, min1, sec1, min2, sec2):
     return percentage
 
 
-for i in range (3, 5):
-     test_data = pd.read_csv("/Users/munte029/Desktop/eye_tracking/pupil_positions (" + str(i) + ").csv",
+for i in range (1, 30):
+     test_data = pd.read_csv("/Users/ioanamunteanu/Eye-Tracking/pupil_data/pupil_positions (" + str(i) + ").csv",
                       usecols=["world_timestamp", "world_index", "eye_id", "confidence", "norm_pos_x", "norm_pos_y"])
 
      test_data = test_data.loc[test_data["confidence"] >= .7].loc[test_data["eye_id"] == 0]

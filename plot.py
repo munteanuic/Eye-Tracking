@@ -183,7 +183,7 @@ def percentFocusedBoth(frame_l, frame_r, t1, t2):
 def allFocus (v):
     print(v)
     for i in range (17):
-        pupils = pd.read_csv("/Users/munte029/Desktop/eye_tracking/data" + str(i) + ".csv",
+        pupils = pd.read_csv("/Users/ioanamunteanu/Downloads/EyeData/pupil_data/pupil_positions" + str(i) + ".csv",
                 usecols=["world_timestamp","eye_id", "norm_pos_x", "confidence", "norm_pos_y"])
         normalize_time (pupils)
 
@@ -242,7 +242,7 @@ def AccFocused(frame, t1, t2, a):
 def allAccFocus (v):
     print(v)
     for i in range (17):
-        pupils = pd.read_csv("/Users/munte029/Desktop/eye_tracking/data" + str(i) + ".csv",
+        pupils = pd.read_csv("/Users/ioanamunteanu/Eye-Tracking/pupil_data" + str(i) + ".csv",
                 usecols=["world_timestamp","eye_id", "norm_pos_x", "confidence", "norm_pos_y"])
         normalize_time (pupils)
 
@@ -314,7 +314,7 @@ def fft_acceleration(frame):
     #plt.xlim((0,10))
     plt.show()
 
-pupils = pd.read_csv("/Users/munte029/Desktop/eye_tracking/data10.csv",
+pupils = pd.read_csv("/Users/ioanamunteanu/Downloads/EyeData/pupil_data/pupil_positions10.csv",
                 usecols=["world_timestamp","world_index","eye_id", "norm_pos_x", "confidence", "norm_pos_y"])
 pupils = pupils.loc[pupils["confidence"] >= .6].loc[pupils["eye_id"] ==1]
 normalize_time(pupils)
@@ -323,7 +323,7 @@ pupilsscrubin = pupils.iloc[:166]
 pupilssurgery = pupils.iloc[1200:1366]
 fft_velocity(pupilsscrubin)
 fft_velocity(pupilssurgery)
-# fft_acceleration(pupilsscrubin)
-# fft_acceleration(pupilssurgery)
+fft_acceleration(pupilsscrubin)
+fft_acceleration(pupilssurgery)
 
 
